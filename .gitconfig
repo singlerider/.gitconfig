@@ -3,5 +3,6 @@
 [alias]
 	s = status -s
 	lg = log --oneline --decorate --all --graph
+	stash-unapply = !git stash show -p | git apply -R
 [push]
 	default = simple
